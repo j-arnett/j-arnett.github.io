@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Dice Roller</title>
+        <link rel="stylesheet" href="roller.css">
+        <script src="roller.js"></script>
+    </head>
+    <body>
+        <div>
+            <input id="dice" type="number" min="1" max="999" value="12"/>
+            <button onclick="roller()">Roll</button>
+            <input id="edge" type="checkbox"/>
+            <label for="edge">Edge</label>
+        </div>
+        <div>
+            <br><span id="outcome"></span>
+        </div>
+        <div>
+            <br><span id="results"></span>
+        </div>
+        <div>
+            <br><button id="reroll" onclick="reroller()" hidden>Reroll</button>
+        </div>
+    </body>
+</html>
